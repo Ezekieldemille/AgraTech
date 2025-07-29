@@ -8,18 +8,26 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background: url("AgraTechHomepage.jpg") no-repeat center center fixed;
-      background-size: cover;
+      background: white;
       font-family: sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-shadow: 1px 1px 3px black;
     }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 40px 0;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      max-width: 90%;
+      height: auto;
+    }
+
     .button {
-      margin-top: 20px;
       padding: 12px 24px;
       background-color: #007BFF;
       color: white;
@@ -30,7 +38,9 @@
   </style>
 </head>
 <body>
-  <h1>Contact us</h1>
-  <a class="button" href="mailto:build@agratec.usm">Contact Us</a>
+  <div class="container">
+    <img src="AgraTechHomepage.jpg" alt="Agra Tech Logo" class="logo">
+    <a class="button" href="mailto:your@email.com">Contact Us</a>
+  </div>
 </body>
 </html>
